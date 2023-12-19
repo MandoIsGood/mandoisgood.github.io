@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mando's World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mando's World!</h1>
+        <p class="sub-heading">I'm Mando, a high school sophomore and passionate game developer. Leading and managing a backend team is what I excel at.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#freelance">Freelance</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="active">
+        <h2>A Very Cool Developer!</h2>
+        <p class="subtitle">Let's know about me :)</p>
+        <div class="blurred-image">
+            <!-- Add your image source here -->
+            <img src="nothing.png" alt="Blurred Image" class="profile-img">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hey! I'm Mando, a sophomore high school student from India. As a chronically online dev, I'm often referred to as a citizen of Mandalore (Star Wars fans will get it). I love turning my research into real-life projects and believe in living life to the fullest. 🌟</p>
+    </section>
+
+    <section id="github">
+        <h2>GitHub</h2>
+        <p>Check out my GitHub profile for some exciting projects:</p>
+        <a href="https://github.com/MandoIsGood" target="_blank" rel="noopener noreferrer" class="github-link">MandoIsGood on GitHub</a>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <ul>
+            <li>High School Sophomore</li>
+            <li>A+ student</li>
+            <li>Skilled at Java, learning web development, and Godot game development</li>
+            <li>Worked at IsharkGlobal and Syntax Dev</li>
+            <li>Freelancer and current developer at FruitSMP/Minecraft Server</li>
+            <li>Future goal: IIT and a bachelor's in technology in computer science</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>I have expertise in the following:</p>
+        <ul>
+            <li>Java</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Game Development with Godot</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Minecraft Plugins</h3>
+            <p>I have developed many minecraft plugin and have also worked with them, many plugins including mythic mobs, modelengine, etc.</p>
+        </div>
+        <div class="project">
+            <h3>Backend Server</h3>
+            <p>As a java dev. I have great experience working with databases and can develop databases too.</p>
+        </div>
+        <div class="project">
+            <h3>App Development</h3>
+            <p>I am quite aware of all the Java syntax and have worked with its different branches too, I have the knowledge to develop Android Apps fully fleshed.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me:</p>
+        <p>Email: <a href="mailto:mandoisgood@gmail.com">mandoisgood@gmail.com</a></p>
+        <p>Discord: MandoIsGood</p>
+    </section>
+    
+    <section id="freelance">
+        <h2>Freelance Developer</h2>
+        <p>I am available for freelance opportunities. Let's collaborate on exciting projects!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mando's World. All rights reserved.</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+
+    <script defer src="script.js"></script>
+<script>
+    // Additional script for smooth scrolling and back-to-top button
+    document.addEventListener("DOMContentLoaded", function () {
+        var topButton = document.getElementById('back-to-top');
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Show/hide back-to-top button
+        window.addEventListener("scroll", function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        });
+
+        // Scroll to top when button is clicked
+        topButton.addEventListener('click', function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    });
+</script>
+</body>
+</html>
