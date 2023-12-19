@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282c35; /* Darker background */
+    color: #fff;
+}
+
+header {
+    background-color: #1e2128; /* Slightly darker header */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, h2 {
+    color: #61dafb; /* React blue for header text */
+}
+
+nav {
+    background-color: #2e333e; /* Slightly darker nav background */
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #61dafb; /* React blue for nav links */
+    font-weight: bold;
+}
+
+a {
+    color: #bd93f9; /* Purple */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #444c5d; /* Slightly darker section background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Increased box shadow */
+}
+
+header img {
+    max-width: 150px; /* Adjust the width of your photo */
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #2e333e; /* Slightly darker footer background */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: -50px; /* Initially position it below the viewport */
+    width: 100%;
+    transition: bottom 0.5s ease; /* Add smooth transition */
+}
+
+body.hide-footer footer {
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+    header img {
+        max-width: 100%; /* Adjust the width of your photo for small screens */
+    }
+}
+
+
+
+
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.sub-heading {
+    color: #888;
+    font-size: 1.1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #2e333e;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #444c5d;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+    max-width: 20%;
+    border-radius:66%; /* Make the image round */
+    margin-bottom: 20px;
+}
+
+
+.github-link, .contact-link {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link:hover, .contact-link:hover {
+    text-decoration: underline;
+}
+
+#home {
+    text-align: center;
+    position: relative;
+}
+
+#home h2 {
+    font-size: 3em;
+    color: #61dafb;
+    margin-bottom: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+}
+
+#home .subtitle {
+    color: #888;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 60%;
+}
+
+.blurred-image {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Adjust the height as needed */
+}
+
+.blurred-image img {
+    width: auto;
+    max-height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+    transform: scale(4); /* Adjust the scale factor for the desired enlargement */
+    transition: transform 0.5s ease, filter 0.5s ease;
+    z-index: 0;
+    border: 05%;
+
+}
+
+.blurred-image img:hover {
+    transform: scale(1);
+    filter: blur(0);
+}
