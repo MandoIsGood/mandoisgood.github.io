@@ -203,3 +203,25 @@ section {
     transform: scale(1);
     filter: blur(0);
 }
+
+#skills {
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin: 0;
+    color: #61dafb;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color:
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+
