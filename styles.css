@@ -214,14 +214,14 @@ section {
 
 .skill p {
     margin: 0;
-    color: #61dafb;
 }
 
 .progress-bar {
     height: 20px;
-    background-color:
+    background-color: #61dafb; /* Progress bar color */
     border-radius: 8px;
     margin-top: 5px;
 }
+
 
 
