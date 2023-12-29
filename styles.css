@@ -205,7 +205,7 @@ section {
 }
 
 #skills {
-    text-align: center;
+    text-align: left;
 }
 
 .skill {
@@ -214,14 +214,44 @@ section {
 
 .skill p {
     margin: 0;
+    color: #fff; /* White color for the skill names */
+    font-weight: bold;
 }
 
 .progress-bar {
-    height: 20px;
-    background-color: #61dafb; /* Progress bar color */
+    height: 15px;
+    background-color: #4d7fb0; /* Adjusted color for the progress bar */
     border-radius: 8px;
     margin-top: 5px;
+    position: relative;
 }
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+}
+
+#java .progress-bar {
+    width: 70%;
+}
+
+#godot .progress-bar {
+    width: 70%; 
+}
+
+#web-dev .progress-bar {
+    width: 65%;
+}
+
+#management .progress-bar {
+    width: 65%; 
+}
+
+
 
 
 
